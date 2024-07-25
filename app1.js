@@ -57,7 +57,7 @@ const storeItems = new Map([
 ]);
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/home.html");
+  res.sendFile(__dirname + "/index.html");
 });
 app.get("/Volunteer.html", function (req, res) {
   res.sendFile(__dirname + "/Volunteer.html");
@@ -65,8 +65,8 @@ app.get("/Volunteer.html", function (req, res) {
 app.get("/Donate.html", function (req, res) {
   res.sendFile(__dirname + "/Donate.html");
 });
-app.get("/home.html", function (req, res) {
-  res.sendFile(__dirname + "/home.html");
+app.get("/index.html", function (req, res) {
+  res.sendFile(__dirname + "/index.html");
 });
 app.post("/create-checkout-session", async (req, res) => {
   //res.json({ url: "Hi" })
